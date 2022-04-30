@@ -15,6 +15,26 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
+                 <x-jet-nav-link href="{{ route('universidad') }}" :active="request()->routeIs('universidad')">
+                     Universidad
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('estudiante') }}" :active="request()->routeIs('estudiante')">
+                    Estudiante
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('asistencia') }}" :active="request()->routeIs('asistencia')">
+                    Asistencia
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('docente') }}" :active="request()->routeIs('docente')">
+                    Docente
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('asignatura') }}" :active="request()->routeIs('asignatura')">
+                  Asignatura
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('encuentros') }}" :active="request()->routeIs('encuentros')">
+           Encuentros
+                    </x-jet-nav-link>
+                  
+                    
                 </div>
             </div>
 

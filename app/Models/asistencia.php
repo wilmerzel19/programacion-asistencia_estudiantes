@@ -9,5 +9,6 @@ class asistencia extends Model
 {
     use HasFactory;
     protected $table ='asistencias';
+    protected $fillable=['hora','estado','estudiante_id','asignatura_id','fecha_id'];
 
 }

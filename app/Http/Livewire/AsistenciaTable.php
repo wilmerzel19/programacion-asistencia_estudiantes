@@ -43,6 +43,9 @@ class AsistenciaTable extends DataTableComponent
                 
                 column::make("Eliminar","id")
                 ->view("tabla1.botones.asistencia.eliminar"),
+
+                column::make("Crear","id")
+                ->view("tabla1.botones.asistencia.crear"),
         ];
     }
 }

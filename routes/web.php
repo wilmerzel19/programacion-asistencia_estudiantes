@@ -1,4 +1,10 @@
 <?php
+use App\Http\Livewire\Encuentros\CrearEncuentrosComponent;
+use App\Http\Livewire\Asignatura\CrearAsignaturaComponent;
+use App\Http\Livewire\Docente\CrearDocenteComponent;
+use App\Http\Livewire\Asistencia\CrearAsistenciaComponent;
+use App\Http\Livewire\Estudiante\CrearEstudianteComponent;
+use App\Http\Livewire\Universidad\CrearUniversidadComponent;
 use App\Http\Livewire\Encuentros\EncuentrosEliminarComponent;
 use App\Http\Livewire\Asignatura\AsignaturaEliminarComponent;
 use App\Http\Livewire\Docente\DocenteEliminarComponent;
@@ -57,6 +63,11 @@ Route::get ('/asignatura/{id}/eliminar',AsignaturaEliminarComponent::class)->nam
 Route::get ('/encuentros/{id}/eliminar',EncuentrosEliminarComponent::class)->name('encuentros.eliminar');
 
 
-
-
+//ruta para crear la universidad
+Route::get ('/universidad/{id}/crear',CrearUniversidadComponent::class)->name('universidad.crear');
+Route::get ('/estudiante/{id}/crear',CrearEstudianteComponent::class)->name('estudiante.crear');
+Route::get ('/asistencia/{id}/crear',CrearAsistenciaComponent::class)->name('asistencia.crear');
+Route::get ('/docente/{id}/crear',CrearDocenteComponent::class)->name('docente.crear');
+Route::get ('/asignatura/{id}/crear',CrearAsignaturaComponent::class)->name('asignatura.crear');
+Route::get ('/encuentros/{id}/crear',CrearEncuentrosComponent::class)->name('encuentros.crear');
 });

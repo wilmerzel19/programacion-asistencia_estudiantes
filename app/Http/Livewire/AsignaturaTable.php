@@ -34,6 +34,9 @@ class AsignaturaTable extends DataTableComponent
 
                 column::make("Eliminar","id")
                 ->view("tabla3.botones.asignatura.eliminar"),
+
+                column::make("Crear","id")
+                ->view("tabla3.botones.asignatura.crear"),
         ];
     }
 }

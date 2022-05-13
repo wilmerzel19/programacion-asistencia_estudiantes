@@ -9,5 +9,5 @@ class asignatura extends Model
 {
     use HasFactory;
     protected $table ='asignaturas';
-
+    protected $fillable=['nombre','docente_id'];
 }

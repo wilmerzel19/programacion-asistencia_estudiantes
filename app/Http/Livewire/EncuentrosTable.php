@@ -29,6 +29,9 @@ class EncuentrosTable extends DataTableComponent
 
                 column::make("Eliminar","id")
                 ->view("tabla4.botones.encuentros.eliminar"),
+
+                column::make("Crear","id")
+                ->view("tabla4.botones.encuentros.crear"),
         ];
     }
 }

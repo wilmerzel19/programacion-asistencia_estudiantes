@@ -10,4 +10,5 @@ class encuentros extends Model
     use HasFactory;
     protected $table ='encuentros';
 
+    protected $fillable=['fecha'];
 }

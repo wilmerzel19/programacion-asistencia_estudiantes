@@ -39,6 +39,9 @@ class UniversidadTable extends DataTableComponent
 
                 column::make("Eliminar","id")
                 ->view("tablas.botones.universidad.eliminar"),
+                
+                column::make("Crear","id")
+                ->view("tablas.botones.universidad.crear"),
         ];
     }
 }

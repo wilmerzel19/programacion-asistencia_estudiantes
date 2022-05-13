@@ -45,6 +45,9 @@ class EstudianteTable extends DataTableComponent
                 column::make("Eliminar","id")
                 ->view("tabla.botones.estudiante.eliminar"),
 
+                column::make("Crear","id")
+                ->view("tabla.botones.estudiante.crear"),
+
 
 
         ];
